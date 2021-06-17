@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/27/21/11/beach-1110498_960_720.jpg");
+    background-position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#app {
+    font-size: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 30px;
+    grid-template-areas:
+        "hd"
+        "main"
+        "rlt"
+        "ft";
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#header {
+    grid-area: hd;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: rgb(245, 240, 240);
+}
+
+
+#plan_trip {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 5px 17px 6px rgba(59, 74, 107, .07);
+    margin: auto;
+    padding: 2rem;
+    width: 50%;
+    grid-gap: 10px;
+}
+
+button,
+#travel_details_submit {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+    line-height: 2px;
+    display: block;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 6px 10px black;
+}
+
+label {
+    font-size: 20px;
+    display: block;
+}
+
+input {
+    height: 30px;
+    width: 320px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    background: #e67d1c;
+    cursor: pointer;
+}
+
+/* Style for Placeholder Text*/
+::placeholder {
+    color: black;
+}
+
+
+footer {
+    grid-area: ft;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(15, 15, 15);
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    #header {
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        height: 30px;
+        width: 220px;
+    }
+
+    #results {
+        flex-direction: column;
+    }
+}

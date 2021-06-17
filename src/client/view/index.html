@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/result.css">
+    <title>World of Travel</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="app">
+        <div id="header">
+            <h1>Tempest Trips of Worldly Wanderers </h1>
+            <div>
+                <i class="material-icons">notifications</i>
+                <i class="material-icons">account_circle</i>
+                <button id="plan_now">Plan Now</button>
+            </div>
+        </div>
+        <!-- Search Container -->   
+            <div id="box">
+            <section id="plan_trip">
+                <h2>Plan your trip</h2>
+                    <form id="trip_details_form">
+                        <label for="departure_city">Departure</label>
+                        <input type="text" id="departure_city" placeholder="Enter the Cityname." required>
+                        <br>
+                        <label for="arrival_city">Arrival</label>
+                        <input type="text" id="arrival_city" placeholder="Enter the Cityname." required>
+                        <br>
+                        <label for="departureDate">Date of Travel</label>
+                        <input type="date" id="departureDate" required>
+                        <br>
+                        <div>
+                        <input type="submit"
+                        name="submit" id="travel_details_submit" value="Submit">
+                        </div>  
+                    </form>
+                
+
+            </section>
+            </div>
+            <div id="result">
+            <section class='invisible' id="trip_details_section">
+                <div id="trip_details">
+                    <div id="dest_photo">
+                <img id="dest_desc_photo" src="" alt="destination image">
+            </div>
+                    <div id="result__content">
+                        <!-- boarding details -->
+                        <div id="boarding_details">You are boarding from: <span class="dynamic_content"
+                        id="boarding"></span> </div>
+                        
+                        <!-- destination details -->
+                        <div id="destination_details">You are going to: <span class="dynamic_content"
+                        id="destination"></span></div>
+
+                        <!-- Departure Date -->
+                        <div id="departure_details">Departing on: <span class="dynamic_content" id="date"></span></div>
+
+                        <!-- days left -->
+                        <div id="days_to_go_details">Days to go <span class="dynamic_content" id="number_of_days"></span>
+                        </div>
+
+                        <!-- temp details -->
+                        <div id="temperature_details">Expect weather to be <span class="dynamic_content"
+                        id="temperature"> &#8451;</span>    
+                    <span class="dynamic_content" id="weather"></span>.</div>
+                <div>
+                    </div>
+                    <button id="remove_trip" type="submit">Remove Trip</button>
+                </div>
+            </section>
+            </div>
+            </div>
+        <footer class="footer">
+            <p><small><strong>Made by Rutu &copy;2021</strong></small></p>
+        </footer>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
