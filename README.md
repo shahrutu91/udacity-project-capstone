@@ -42,6 +42,9 @@ Install the Dependencies and then run the following install commands.
     npm run build-prod
     npm run build-dev
 ```
-
+### Test Function
+Jest has been added.
+```shell script
+    npm run test
 
 
