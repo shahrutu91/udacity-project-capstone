@@ -6,13 +6,26 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 
 module.exports = {
+    mode: "development",
     entry: './src/client/index.js',
+    devtool: 'source-map',
+    stats: 'verbose', 
     module: {
         rules: [
             {
                 test: '/\.js$/',
                 exclude: /node_modules/,
                 loader: "babel-loader"
+            },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(html)$/,
+                use: [{
+                    loader: 'html-loader',
+                }]
             }
         ]
     },

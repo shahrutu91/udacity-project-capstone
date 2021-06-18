@@ -123,7 +123,7 @@ function updateUI(data) {
 
     let destination_details = document.getElementById("destination");
     let boarding_details = document.getElementById("boarding");
-    let departure_date = document.getElementById("departing_date");
+    let departure_date = document.getElementById("date");
     let number_of_days = document.getElementById('number_of_days');
     let temperature = document.getElementById('temperature');
     let dest_desc_photo = document.getElementById('dest_desc_photo');

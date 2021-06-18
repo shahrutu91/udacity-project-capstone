@@ -19,7 +19,7 @@ const cors = require('cors');
 app.use(cors());
 
 // Initialize the main project folder
-app.use(express.static('src/client'));
+app.use(express.static('dist'));
 
 // Setup Server
 
@@ -33,8 +33,8 @@ const server = app.listen(port, () => {
 // GET Function
 
 app.get('/', function(req, res) {
-    // res.sendFile('dist/index.html');
-    res.sendFile('src/client/view/index.html');
+    res.sendFile('dist/index.html');
+    // res.sendFile('src/client/view/index.html');
 })
 
 // POST Function
