@@ -1,0 +1,32 @@
+{
+  "name": "udacity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahrutu91/udacity-project-capstone.git"
+  },
+  "keywords": [],
+  "author": "Rutu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahrutu91/udacity-project-capstone/issues"
+  },
+  "homepage": "https://github.com/shahrutu91/udacity-project-capstone#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
