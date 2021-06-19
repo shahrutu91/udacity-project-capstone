@@ -33,8 +33,7 @@ const server = app.listen(port, () => {
 // GET Function
 
 app.get('/', function(req, res) {
-    res.sendFile('dist/index.html');
-    // res.sendFile('src/client/view/index.html');
+    res.status(200).sendFile('dist/index.html');
 })
 
 // POST Function
@@ -51,3 +50,4 @@ app.post('/postData',function (req,res){
 
     res.send(projectData);
 });
+module.exports = app;
